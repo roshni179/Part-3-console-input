@@ -11,8 +11,8 @@ namespace Part_3_console_input
         static void Main(string[] args)
         {
             string name;
-            string age;
-            string year;
+            int age;
+            int year;
           
            Console.WriteLine("What's your name?");
            name = Console.ReadLine();
@@ -25,9 +25,9 @@ namespace Part_3_console_input
 
            
             Console.WriteLine($"What is the current year?");
-                 Console.WriteLine(DateTime.Now.Year);
-            year = Console.ReadLine();
-         Console.WriteLine($"Oh it is {DateTime.Now.Year}.");
+            
+            year = DateTime.Now.Year;
+            Console.WriteLine($"Oh you were born in {year - age}.");
             
         }
     }
