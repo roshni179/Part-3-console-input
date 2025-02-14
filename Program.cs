@@ -107,17 +107,17 @@ namespace Part_3_console_input
             double Side1, Side2, hypotenuse;
 
             Console.WriteLine("Side 1 value: ");
-            Side1 = Convert.ToDouble(Console.ReadLine());
+            Side1 = Convert.ToDouble(Console.ReadLine()); 
             Console.WriteLine();
 
-            Console.WriteLine("Side 2 value: ");
+            Console.WriteLine("Side 2 value:  ");
             Side2 = Convert.ToDouble(Console.ReadLine());
-            double hypotenuse = Math.Pow(Side1, 2) + Math.Pow(Side2, 2);
+            hypotenuse = Math.Pow(Side1, 2) + Math.Pow(Side2, 2);
 
 
 
 
-            Console.WriteLine((double hypotenuse));
+            Console.WriteLine($"The hypotenuse is: {hypotenuse} units");
         }
 
     }
